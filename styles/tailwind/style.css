@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .paragraph-title {
+        @apply text-gray-700 font-bold;
+    }
+    .paragraph-transparent {
+        @apply text-gray-500;
+    }
+    .textbox {
+        @apply text-center bg-inherit border-b-2 border-gray-500  outline-0;
+    }
+    .textbox:focus{
+        @apply border-gray-800
+    }
+    .button {
+        @apply rounded-md px-3 py-1
+    }
+        .button:hover{
+            @apply bg-opacity-70
+        }
+}

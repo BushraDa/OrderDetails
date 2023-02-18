@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>تفاصيل الطلبية</title>
+        <link href="styles/stylesheet.css" rel="stylesheet">
+    </head>
+    <body class="font-serif text-xl bg-yellow-100">
+        <nav class=" bg-yellow-300 p-4 flex flex-row gap-5 text-gray-700 
+            justify-between">
+            <img src="assets/app_icon.png" class="h-10">
+            <ul class="flex flex-row gap-4 menu">
+                <li><a href=".." class="hover:text-red-600">طلبية زبون</a></li>
+                <li><a href="..." class="hover:text-red-600">طلبية مندوب</a></li>
+                <li><a href="..." class="hover:text-red-600">طلبية زبون خاصة</a></li>
+                <li><a href="..." class="hover:text-red-600">العودة إلى الطلبية</a></li>
+            </ul>
+            <div class="flex gap-4">
+                <input placeholder="اسم المنتج" class="textbox">
+            </div>
+        </nav>
+
+        <main class="container p-10 rounded-md mx-auto my-10 bg-white">
+            <h1 class="text-center border-b-2 p-2 text-3xl">تفاصيل الطلبية</h1>
+            <div>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 border-b-2 p-4">
+                    <div>
+                        <p class="paragraph-title">معلومات الطلبية</p>
+                        <p class="paragraph-transparent">5845212</p>
+                        <p class="paragraph-transparent">12/2/2023 12:00</p>
+                        <p class="paragraph-transparent">End</p>
+                    </div>
+                    <div>
+                        <p class="paragraph-title">معلومات الزبون</p>
+                        <p class="paragraph-transparent">بشرى داود</p>
+                        <p class="paragraph-transparent">جبلة, شارع المسبح الطابق الثالث</p>
+                        <p class="paragraph-transparent">095484638</p>
+                    </div>
+                    <div >
+                        <p class="paragraph-title">ملاحظات الزبون</p>
+                        <p class="paragraph-transparent">ملاحظات عن المنتجات والمحتويات ومكان التوصيل</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-7 md:grid-cols-4 gap-4 text-center my-3 border-b-2 p-4">
+                        <label class="paragraph-title">مدة التجهيز</label>
+                        <input value="30" type="number" class="textbox">
+
+                        <label class="paragraph-title">الرقم الفعلي</label>
+                        <input value="0954844638" type="tel" class="textbox">
+
+                        <label class="paragraph-title">وقت الجهوزية</label>
+                        <input value="2500" type="date" class="textbox">
+                        <input value="2500" type="time" class="textbox">
+                </div>
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 text-center my-3 p-4">
+                    <div>
+                        <p class="paragraph-title">قيمة منتجات الطلبية</p>
+                        <p class="paragraph-transparent">7500</p>
+                    </div>
+                    <div>
+                        <p class="paragraph-title">الحسميات</p>
+                        <p class="paragraph-transparent">0</p>
+                    </div>
+                    <div class="">
+                        <label class="paragraph-title block" for="delivery">أجور التوصيل</label>
+                        <input value="2500" type="number" id="delivery" placeholder="0"
+                            class="textbox">
+                    </div>
+                    <div>
+                        <p class="paragraph-title">المجموع الكلي</p>
+                        <p class="paragraph-transparent">10000</p>
+                    </div>
+                </div>
+                <div class="">
+                    <textarea class="border-2 rounded-md focus:outline-gray-400 w-full p-2" placeholder="ملاحظات الإدارة"></textarea>
+                </div>
+            </div>
+
+            <div class="rounded-md my-5 border-2 border-yellow-600">
+                <table class="table-fixed w-full text-center">
+                    <thead class="bg-yellow-600 text-gray-50">
+                        <th>#</th>
+                        <th>اسم المنتج</th>
+                        <th>السعر</th>
+                        <th>الكمية</th>
+                        <th>المتجر</th>
+                        <th>ملاحظات</th>
+                    </thead>
+                    <tbody class="p-5">
+                        <tr>
+                            <td>1</td>
+                            <td>شاورما</td>
+                            <td>5000</td>
+                            <td>2</td>
+                            <td>اللفاح</td>
+                            <td>ملاحظات</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mx-auto gap-3">
+                <button class="bg-blue-300 button">حفظ</button>
+                <button class="bg-blue-500 button">إرسال</button>
+                <button class="bg-yellow-500 button">تأكيد الكل</button>
+                <button class="bg-yellow-400 button">إرسال إلى المتجر</button>
+                <button class="bg-red-500 button">إلغاء</button>
+            </div>
+        </main>
+
+    </body>
+</html>
