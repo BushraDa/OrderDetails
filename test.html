@@ -6,19 +6,15 @@
         <title>تفاصيل الطلبية</title>
         <link href="styles/stylesheet.css" rel="stylesheet">
     </head>
-    <body class="font-serif text-xl bg-yellow-100">
-        <nav class=" bg-yellow-300 p-4 flex flex-row gap-5 text-gray-700 
-            justify-between">
+    <body class="font-serif text-xl bg-slate-200">
+        <nav class=" bg-slate-700 text-white p-4 flex flex-row gap">
             <img src="assets/app_icon.png" class="h-10">
             <ul class="flex flex-row gap-4 menu">
-                <li><a href=".." class="hover:text-red-600">طلبية زبون</a></li>
-                <li><a href="..." class="hover:text-red-600">طلبية مندوب</a></li>
-                <li><a href="..." class="hover:text-red-600">طلبية زبون خاصة</a></li>
-                <li><a href="..." class="hover:text-red-600">العودة إلى الطلبية</a></li>
+                <li><a href="..." class="link">طلبية زبون</a></li>
+                <li><a href="..." class="link">طلبية مندوب</a></li>
+                <li><a href="..." class="link">طلبية زبون خاصة</a></li>
+                <li><a href="..." class="link">العودة إلى الطلبية</a></li>
             </ul>
-            <div class="flex gap-4">
-                <input placeholder="اسم المنتج" class="textbox">
-            </div>
         </nav>
 
         <main class="container p-10 rounded-md mx-auto my-10 bg-white">
@@ -77,9 +73,9 @@
                 </div>
             </div>
 
-            <div class="rounded-md my-5 border-2 border-yellow-600">
+            <div class="rounded-md my-5 border-2 border-amber-800">
                 <table class="table-fixed w-full text-center">
-                    <thead class="bg-yellow-600 text-gray-50">
+                    <thead class="bg-amber-800 text-gray-50">
                         <th>#</th>
                         <th>اسم المنتج</th>
                         <th>السعر</th>
@@ -99,12 +95,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="mx-auto gap-3">
-                <button class="bg-blue-300 button">حفظ</button>
-                <button class="bg-blue-500 button">إرسال</button>
+            <div class="mx-auto gap-3 flex justify-center">
+                <button class="bg-green-600 button">حفظ</button>
+                <button class="bg-green-500 button">إرسال</button>
                 <button class="bg-yellow-500 button">تأكيد الكل</button>
                 <button class="bg-yellow-400 button">إرسال إلى المتجر</button>
-                <button class="bg-red-500 button">إلغاء</button>
+                <button class="button-danger button">إلغاء</button>
             </div>
         </main>
 

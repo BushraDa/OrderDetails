@@ -3,22 +3,83 @@
 @tailwind utilities;
 
 @layer components {
+    body {
+        @apply font-serif text-xl bg-custom_grey-100 min-h-screen
+    }
+    main {
+        @apply container p-10 rounded-md mx-auto my-10 bg-white
+    }
+    section {
+        @apply m-2
+    }
     .paragraph-title {
-        @apply text-gray-700 font-bold;
+        @apply text-custom_blue-100 font-bold;
     }
     .paragraph-transparent {
         @apply text-gray-500;
     }
-    .textbox {
+    input {
         @apply text-center bg-inherit border-b-2 border-gray-500  outline-0;
     }
-    .textbox:focus{
+    input:focus{
         @apply border-gray-800
     }
-    .button {
-        @apply rounded-md px-3 py-1
+    button {
+        @apply rounded-md px-3 py-2 bg-custom_grey-200
     }
-        .button:hover{
+        button:hover{
             @apply bg-opacity-70
         }
+        .button-danger {
+            @apply bg-custom_red-200 text-white
+        }
+        .button-primary {
+            @apply bg-custom_blue-100 text-white
+        }
+        .button-secondary {
+            @apply bg-custom_blue-100 text-white
+        }
+        .btn-notification {
+            @apply relative lg:m-0 m-2 px-5 py-3
+        }
+        .button-badge {
+            @apply absolute -top-3 -left-3 py-1 px-3 bg-custom_red-50 rounded-full text-white
+        }
+    .link {
+        @apply p-5 block
+    }
+        .link:hover {
+            @apply bg-custom_red-50
+        }
+    select {
+        @apply px-5 py-2 h-fit bg-custom_grey-100 rounded-md m-1
+    }
+        select:focus {
+            @apply outline-none
+        }
+    table {
+        @apply my-5 w-full text-center border-2 border-custom_yellow-200 table-auto
+    }
+        table input {
+            @apply w-20
+        }
+    
+        table select {
+            @apply px-0
+        }
+        table td,
+        th {
+            @apply p-2
+        }
+    
+        table thead {
+            @apply bg-custom_yellow-200
+        }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+html,body {
+    scrollbar-width: none;
 }

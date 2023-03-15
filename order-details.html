@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>تفاصيل الطلبية</title>
+        <link href="/styles/stylesheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class=" bg-custom_blue-100 text-white flex items-center">
+            <ul class="flex">
+                <li><a href="orders.html" class="link">الطلبيات</a></li>
+                <li><a href="order-details.html" class="link">تفاصيل الطلبية</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <h1 class="text-center border-b-2 p-2 text-3xl">تفاصيل الطلبية</h1>
+            <section>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 border-b-2 p-4">
+                    <div>
+                        <p class="paragraph-title">معلومات الطلبية</p>
+                        <p class="paragraph-transparent">5845212</p>
+                        <p class="paragraph-transparent">12/2/2023 12:00</p>
+                        <p class="paragraph-transparent">قيد العمل</p>
+                    </div>
+                    <div>
+                        <p class="paragraph-title">معلومات الزبون</p>
+                        <p class="paragraph-transparent">الزبون</p>
+                        <p class="paragraph-transparent">اللاذقية, الطابق الثالث</p>
+                        <p class="paragraph-transparent">123456789</p>
+                    </div>
+                    <div>
+                        <p class="paragraph-title">ملاحظات الزبون</p>
+                        <p class="paragraph-transparent">ملاحظات عن المنتجات والمحتويات ومكان التوصيل</p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 text-center my-3 p-4">
+                    <div>
+                        <p class="paragraph-title">قيمة منتجات الطلبية</p>
+                        <p class="paragraph-transparent">7500</p>
+                    </div>
+                    <div>
+                        <p class="paragraph-title">الحسميات</p>
+                        <p class="paragraph-transparent">0</p>
+                    </div>
+                    <div class="">
+                        <label class="paragraph-title block" for="delivery">أجور التوصيل</label>
+                        <input value="2500" type="number" id="delivery" placeholder="0" >
+                    </div>
+                    <div>
+                        <p class="paragraph-title">المجموع الكلي</p>
+                        <p class="paragraph-transparent">10000</p>
+                    </div>
+                </div>
+                <div class="">
+                    <textarea class="border-2 rounded-md focus:outline-gray-400 w-full p-2"
+                        placeholder="ملاحظات الإدارة"></textarea>
+                </div>
+            </section>
+    
+            <section class="overflow-x-scroll">
+                <table>
+                    <thead>
+                        <th>#</th>
+                        <th>اسم المنتج</th>
+                        <th>السعر</th>
+                        <th>السعر بعد الحسم</th>
+                        <th>الكمية</th>
+                        <th>السعر الكلي</th>
+                        <th>المتاجر</th>
+                        <th>عنوان المتجر</th>
+                        <th>أرقام الهواتف</th>
+                        <th>حالة المادة</th>
+                        <th>ملاحظات</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>شاورما</td>
+                            <td><input type="number" value="5000"></td>
+                            <td><input type="number" value="5000"></td>
+                            <td><input type="number" value="1"></td>
+                            <td><output>5000</output></td>
+                            <td>
+                                <select>
+                                    <option>اللفاح</option>
+                                    <option>زاروب</option>
+                                </select>
+                            </td>
+                            <td>العنوان</td>
+                            <td>
+                                <select>
+                                    <option>05425455</option>
+                                    <option>542545</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>متوفر</option>
+                                    <option>غير متوفر</option>
+                                </select>
+                            </td>
+                            <td>ملاحظات</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="mx-auto gap-3 flex justify-center">
+                <button class="button-primary button">حفظ</button>
+                <button class="button-primary button">إرسال</button>
+                <button class="button-danger button">إلغاء</button>
+            </div>
+        </main>
+    
+    </body>
+</html>

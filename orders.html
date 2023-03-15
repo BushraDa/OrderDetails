@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Marten Do</title>
+        <link href="/styles/stylesheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class=" bg-custom_blue-100 text-white flex items-center">
+            <ul class="flex">
+                <li><a href="orders.html" class="link">الطلبيات</a></li>
+                <li><a href="order-details.html" class="link">تفاصيل الطلبية</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="justify-around lg:flex p-3 items-center gap-2">
+                <div class="gap-3 lg:flex">
+                    <button class="btn-notification">طلبية من الهاتف<span class="button-badge">0</span></button>
+                    <button class="btn-notification">مجدولة<span class="button-badge">0</span></button>
+                    <button class="btn-notification">قيد التنفيذ<span class="button-badge">0</span></button>
+                    <button class="btn-notification">تم التنفيذ<span class="button-badge">0</span></button>
+                </div>
+                <select>
+                    <option selected>Sunday</option>
+                    <option>Saturday</option>
+                </select>
+            </section>
+            <section class="overflow-x-scroll">
+                <table>
+                    <thead>
+                        <th>#</th>
+                        <th>فتح</th>
+                        <th>اسم الزبون</th>
+                        <th>حالة الطلبية</th>
+                        <th>العنوان</th>
+                        <th>رقم الموبايل</th>
+                        <th>التاريخ</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="order-details.html" class="underline">فتح الطلبية</a></td>
+                            <td>الزبون</td>
+                            <td>قيد العمل</td>
+                            <td>اللاذقية</td>
+                            <td>25412542</td>
+                            <td>16/3/2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+    </body>
+</html>
